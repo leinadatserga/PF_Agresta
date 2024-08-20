@@ -1,0 +1,323 @@
+$color_1: rgb(56, 164, 236);
+$color_2: #008585;
+$color_3: rgb(196, 223, 247);
+$color_4: rgb(204, 231, 150);
+$color_5: white;
+$font-family_1: title;
+$font-family_2: best;
+$background-color_1: rgba(0, 0, 22, 0.89);
+$background-color_2: rgba(0, 22, 21, 0.89);
+$background-color_3: rgba(22, 0, 15, 0.89);
+$background-color_4: rgba(22, 9, 0, 0.89);
+$background-color_5: rgba(255, 228, 196, 0.658);
+$background-color_6: rgba(255, 255, 255, 0.137);
+$background-color_7: rgba(19, 2, 51, 0.548);
+
+@font-face {
+	font-family: best;
+	src: url(../assets/fonts/Boldest_Enough.otf);
+}
+@font-face {
+	font-family: title;
+	src: url(../assets/fonts/Russo_One.ttf);
+}
+/* ---------- Body styles ---------- */
+/* ---------- Header styles ---------- */
+/* ---------- Main styles ---------- */
+/* ---------- Buttons styles ---------- */
+/* ---------- Footer styles ---------- */
+/* ---------- Header styles ---------- */
+/* ---------- Header styles ---------- */
+/* ---------- Main styles ---------- */
+/* ---------- Footer styles ---------- */
+/* ---------- Header styles ---------- */
+/* ---------- Buttons styles ---------- */
+/* ---------- Footer styles ---------- */
+/* ---------- Header styles ---------- */
+/* ---------- Main styles ---------- */
+/* ---------- Buttons styles ---------- */
+/* ---------- Footer styles ---------- */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html {
+	height: 100vh;
+	margin: 0;
+	padding: 0;
+}
+body {
+	height: 100vh;
+	margin: 0;
+	padding: 0;
+	background-image: url(../assets/images/corridor-central-perspective-980x560.jpeg);
+	background-color: $background-color_1;
+	background-blend-mode: overlay;
+	background-size: cover;
+}
+.afiliacion {
+	background-image: url(../assets/images/ventanal.jpeg);
+	background-color: $background-color_2;
+	background-blend-mode: overlay;
+	background-size: cover;
+}
+.nosotros {
+	background-image: url(../assets/images/ventanal2.png);
+	background-color: $background-color_3;
+	background-blend-mode: overlay;
+	background-size: cover;
+}
+.agenda {
+	background-image: url(../assets/images/ciudad.jpg);
+	background-color: $background-color_4;
+	background-blend-mode: overlay;
+	background-size: cover;
+}
+header {
+	height: 20%;
+	width: 100%;
+	background-image: url(../assets/images/fondo-cabecera.jpg);
+	background-size: cover;
+	div {
+		height: 100%;
+	}
+}
+.logo {
+	height: 42%;
+	width: 100%;
+	border-radius: 50px 5px;
+	background-color: $background-color_5;
+}
+.title {
+	height: 58%;
+	border: 0;
+	margin: 0;
+	font-family: $font-family_1;
+	font-style: oblique;
+	color: $color_1;
+	font-size: 3rem;
+	line-height: 75%;
+	text-shadow: 5px 5px 8px black;
+	-webkit-text-stroke-width: 2px;
+	-webkit-text-stroke-color: rgb(1, 1, 39);
+}
+main {
+	height: 62%;
+	color: $color_2;
+	.row {
+		height: 100%;
+	}
+}
+.sobre-nosotros {
+	height: auto;
+}
+.imagen {
+	max-height: 60%;
+	img {
+		border-radius: 70px 5px;
+	}
+}
+.contenedor-historia {
+	height: 60%;
+}
+.titulo-historia {
+	font-family: $font-family_1;
+	font-size: 1.2rem;
+	text-align: center;
+	margin: 20px 0px;
+}
+.historia {
+	margin-bottom: 8px;
+	font-family: $font-family_2;
+	font-size: 1rem;
+	height: 100%;
+	color: $color_3;
+	overflow-x: auto;
+}
+.banner1 {
+	height: 20%;
+	a {
+		background-color: $background-color_6;
+		color: $color_4;
+		font-weight: bolder;
+		font-size: 1.8rem;
+		border-radius: 50px 5px;
+	}
+}
+.banner2 {
+	height: 20%;
+	a {
+		background-color: $background-color_6;
+		color: $color_4;
+		font-weight: bolder;
+		font-size: 1.8rem;
+		border-radius: 50px 5px;
+	}
+}
+.formulario {
+	height: 100%;
+	width: 100%;
+	overflow-x: auto;
+}
+.form-afiliat {
+	background-color: $background-color_5;
+	padding: 60px;
+	border-radius: 70px 5px;
+}
+footer {
+	height: 18%;
+	margin: 0px;
+	border: 1px solid #ccc;
+	color: $color_5;
+	background-color: $background-color_7;
+	p {
+		font-family: $font-family_2;
+		margin: 0;
+	}
+}
+.foot {
+	font-size: 1rem;
+}
+@media (min-width: 576px) {
+	header {
+		height: 20%;
+		div {
+			height: 100%;
+		}
+	}
+	.logo {
+		height: 50%;
+		width: 50%;
+		margin: auto 0;
+	}
+	.title {
+		height: 50%;
+		font-size: 4rem;
+	}
+}
+@media (min-width: 768px) {
+	.logo {
+		width: 12%;
+	}
+	main {
+		.row {
+			height: 100%;
+		}
+	}
+	.imagen {
+		height: 100%;
+		img {
+			border-radius: 70px 5px;
+		}
+	}
+	.contenedor-historia {
+		height: 100%;
+	}
+	.titulo-historia {
+		font-size: 2rem;
+		margin: 40px 0px;
+	}
+	.historia {
+		font-size: 1.5rem;
+		height: 100%;
+	}
+	.banner1 {
+		height: 100%;
+	}
+	.banner2 {
+		height: 100%;
+	}
+	.foot {
+		font-size: 1rem;
+	}
+}
+@media (min-width: 1024px) {
+	.title {
+		font-size: 5rem;
+	}
+	.banner1 {
+		a {
+			font-size: 2rem;
+		}
+	}
+	.banner2 {
+		a {
+			font-size: 2rem;
+		}
+	}
+	footer {
+		height: 18%;
+		margin: 0px;
+		border: 1px solid #ccc;
+		color: $color_5;
+		background-color: $background-color_7;
+		p {
+			font-family: $font-family_2;
+			margin: 0;
+		}
+	}
+}
+@media (min-width: 1200px) {
+	header {
+		height: 28%;
+		div {
+			height: 100%;
+		}
+	}
+	.logo {
+		height: 70%;
+		width: 12%;
+	}
+	.title {
+		height: 100%;
+		letter-spacing: 3px;
+		font-size: 6rem;
+	}
+	main {
+		height: 62%;
+		color: $color_2;
+		.row {
+			height: 100%;
+		}
+	}
+	.imagen {
+		img {
+			height: 100%;
+			width: 100%;
+			border-radius: 70px 5px;
+		}
+	}
+	.banner1 {
+		a {
+			background-color: $background-color_6;
+			color: $color_4;
+			font-weight: bolder;
+			font-size: 2.5rem;
+			border-radius: 50px 5px;
+		}
+	}
+	.banner2 {
+		a {
+			background-color: $background-color_6;
+			color: $color_4;
+			font-weight: bolder;
+			font-size: 2.5rem;
+			border-radius: 50px 5px;
+		}
+	}
+	footer {
+		height: 10%;
+		margin: 0px;
+		border: 1px solid #ccc;
+		color: $color_5;
+		background-color: $background-color_7;
+		p {
+			font-family: $font-family_2;
+			margin: 0;
+		}
+	}
+	.foot {
+		font-size: 1.5rem;
+	}
+}
