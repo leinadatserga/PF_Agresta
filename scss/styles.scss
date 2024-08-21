@@ -33,7 +33,7 @@ body {
 	height: 100vh;
 	margin: 0;
 	padding: 0;
-	background-image: url(../assets/images/corridor-central-perspective-980x560.jpeg);
+	background-image: url(../assets/images/corridor-central-perspective-980x560.webp);
 	background-color: $fondo1;
 	background-blend-mode: overlay;
 	background-size: cover;
@@ -42,7 +42,7 @@ body {
     }
 }
 .afiliacion {
-	background-image: url(../assets/images/ventanal.jpeg);
+	background-image: url(../assets/images/ventanal.webp);
 	background-color: $fondo2;
 	background-blend-mode: overlay;
 	background-size: cover;
@@ -60,7 +60,7 @@ body {
 	background-size: cover;
 }
 .clinicas {
-	background-image: url(../assets/images/ciudad.jpg);
+	background-image: url(../assets/images/ciudad.webp);
 	background-color: $fondo4;
 	background-blend-mode: overlay;
 	background-size: cover;
@@ -71,7 +71,7 @@ body {
 header {
 	height: 20%;
 	width: 100%;
-	background-image: url(../assets/images/fondo-cabecera.jpg);
+	background-image: url(../assets/images/fondo-cabecera.webp);
 	background-size: cover;
 	div {
 		height: 100%;
