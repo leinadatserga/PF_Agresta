@@ -34,14 +34,14 @@ body ::-webkit-scrollbar {
 }
 
 .nosotros {
-  background-image: url(../assets/images/ventanal2.png);
+  background-image: url(../assets/images/ventanal2.webp);
   background-color: rgba(22, 0, 15, 0.89);
   background-blend-mode: overlay;
   background-size: cover;
 }
 
 .agenda {
-  background-image: url(../assets/images/ciudad.jpg);
+  background-image: url(../assets/images/ciudad.webp);
   background-color: rgba(22, 9, 0, 0.89);
   background-blend-mode: overlay;
   background-size: cover;
@@ -239,7 +239,7 @@ footer {
 footer .foot {
   font-size: 1rem;
 }
-footer .foot p {
+footer .foot p, footer .foot h4 {
   font-family: best;
   margin: 0;
 }
