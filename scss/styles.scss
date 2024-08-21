@@ -259,6 +259,11 @@ footer {
             font-family: $fuente2;
             margin: 0;
         }
+        .socials {
+            a {
+                color: $color5;
+            }
+        }
     }
 }
 
@@ -374,6 +379,9 @@ footer {
 	footer {
         .foot {
             font-size: 1rem;
+            p {
+                font-size: 1rem;
+            }
         }
     }
 }

@@ -17,102 +17,101 @@
 </head>
 
 <body class="afiliacion">
-    <header class="container-fluid">
+    <header class="container-fluid" role="banner">
         <div class="row d-flex justify-content-center align-items-center">
             <img class="logo col-sm-12 col-md-2 col-lg-2 p-2 rounded animate__animated animate__flip animate__delay-2s" src="../assets/images/logo-principal.svg"
-                alt="logo">
+                alt="logo Sanatorio Pixies">
             <h2 class="title col-sm-12 col-md-10 col-lg-10 d-flex align-items-center justify-content-center">Sanatorio
                 Pixies</h2>
         </div>
     </header>
-    <main>
+    <main role="main">
         <div class="formulario container d-flex flex-column">
-            <a href="../index.html" class="link-light btn fs-4" role="button" title="Volver al inicio">Volver al Inicio</a>
+            <a href="../index.html" class="link-light btn fs-4" role="navigation" title="Volver al inicio">Volver al Inicio</a>
             <h1 class="form-title text-center my-4 fw-bolder text-light animate__animated animate__zoomIn animate__delay-1s">Formulario de Afiliación</h1>
-            <form action="submit" class="form-afiliat was-validated" method="post">
+            <form action="submit" class="form-afiliat was-validated" method="post" role="form">
                 <div class="mb-3">
                     <label for="nombre-completo" class="form-label">Nombre completo:</label>
-                    <input type="text" class="form-control" id="nombre-completo" name="nombre-completo" required>
+                    <input type="text" class="form-control" id="nombre-completo" name="nombre-completo" required aria-required="true">
                 </div>
 
                 <div class="mb-3">
                     <label for="primer-apellido" class="form-label">Primer apellido:</label>
-                    <input type="text" class="form-control" id="primer-apellido" name="primer-apellido" required>
+                    <input type="text" class="form-control" id="primer-apellido" name="primer-apellido" required aria-required="true">
                 </div>
 
                 <div class="mb-3">
                     <label for="segundo-apellido" class="form-label">Segundo apellido:</label>
-                    <input type="text" class="form-control" id="segundo-apellido" name="segundo-apellido" required>
+                    <input type="text" class="form-control" id="segundo-apellido" name="segundo-apellido" required aria-required="true">
                 </div>
 
                 <div class="mb-3">
                     <label for="fecha-nacimiento" class="form-label">Fecha de nacimiento (dd/mm/aaaa):</label>
-                    <input type="date" class="form-control" id="fecha-nacimiento" name="fecha-nacimiento" required>
+                    <input type="date" class="form-control" id="fecha-nacimiento" name="fecha-nacimiento" required aria-required="true">
                 </div>
 
                 <div class="mb-3">
                     <label for="documento" class="form-label">Documento o pasaporte:</label>
-                    <input type="text" class="form-control" id="documento" name="documento" required>
+                    <input type="text" class="form-control" id="documento" name="documento" required aria-required="true">
                 </div>
 
                 <div class="mb-3">
                     <label for="departamento" class="form-label">Departamento de residencia:</label>
-                    <input type="text" class="form-control" id="departamento" name="departamento" required>
+                    <input type="text" class="form-control" id="departamento" name="departamento" required aria-required="true">
                 </div>
 
                 <div class="mb-3">
                     <label for="ciudad" class="form-label">Ciudad:</label>
-                    <input type="text" class="form-control" id="ciudad" name="ciudad" required>
+                    <input type="text" class="form-control" id="ciudad" name="ciudad" required aria-required="true">
                 </div>
 
                 <div class="mb-3">
                     <label for="localidad" class="form-label">Localidad:</label>
-                    <input type="text" class="form-control" id="localidad" name="localidad" required>
+                    <input type="text" class="form-control" id="localidad" name="localidad" required aria-required="true">
                 </div>
 
                 <div class="mb-3">
                     <label for="direccion" class="form-label">Dirección:</label>
-                    <input type="text" class="form-control" id="direccion" name="direccion" required>
+                    <input type="text" class="form-control" id="direccion" name="direccion" required aria-required="true">
                 </div>
 
                 <div class="mb-3">
                     <label for="telefono" class="form-label">Número de teléfono:</label>
-                    <input type="tel" class="form-control" id="telefono" name="telefono" required>
+                    <input type="tel" class="form-control" id="telefono" name="telefono" required aria-required="true">
                 </div>
 
                 <div class="mb-3">
                     <label for="email" class="form-label">Correo electrónico:</label>
-                    <input type="email" class="form-control" id="email" name="email" required>
+                    <input type="email" class="form-control" id="email" name="email" required aria-required="true">
                 </div>
 
                 <div class="form-check mb-3">
-                    <input type="checkbox" class="form-check-input" id="validationFormCheck1" required>
+                    <input type="checkbox" class="form-check-input" id="validationFormCheck1" required aria-required="true">
                     <label class="form-check-label text-reset" for="validationFormCheck1">Acepto los términos y las
                         condiciones</label>
                     <div class="invalid-feedback text-warning">Debe aceptar términos y condiciones</div>
                 </div>
 
                 <div class="text-center">
-                    <button type="submit" class="btn btn-primary me-4 mb-4" title="Enviar el formulario">Enviar</button>
-                    <a href="../index.html" class="btn btn-info mb-4" title="Volver al inicio">Volver al Inicio</a>
+                    <button type="submit" class="btn btn-primary me-4 mb-4" title="Enviar el formulario" role="button">Enviar</button>
+                    <a href="../index.html" class="btn btn-info mb-4" title="Volver al inicio" role="navigation">Volver al Inicio</a>
                 </div>
 
                 <a href="#" class="text-decoration-none fw-bolder" title="Acceda para leer todos los detalles">Leer los Términos y Condiciones Particulares</a>
             </form>
         </div>
     </main>
-    <footer class="container-fluid ">
+    <footer class="container-fluid" role="contentinfo">
         <div class="foot row h-100 d-flex justify-content-between align-items-center">
             <h4 class="col-sm-12 col-md-12 col-lg-3 text-center">© 2024 La Rosa, Mallo, Lanza, Agresta</h4>
             <div class="socials col-sm-12 col-md-12 col-lg-6 d-flex justify-content-around align-middle">
-                <i class="fa-brands fa-whatsapp"></i>
-                <i class="fa-brands fa-instagram"></i>
-                <i class="fa-solid fa-envelope"></i>
-                <i class="fa-brands fa-linkedin"></i>
-                <i class="fa-brands fa-x-twitter"></i>
+                <a href="https://wa.me/1234567890" aria-label="WhatsApp" role="link"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></a>
+                <a href="https://instagram.com/yourprofile" aria-label="Instagram" role="link"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+                <a href="mailto:contacto@sanatoriopixies.com" aria-label="Correo electrónico" role="link"><i class="fa-solid fa-envelope" aria-hidden="true"></i></a>
+                <a href="https://linkedin.com/in/yourprofile" aria-label="LinkedIn" role="link"><i class="fa-brands fa-linkedin" aria-hidden="true"></i></a>
+                <a href="https://twitter.com/yourprofile" aria-label="Twitter" role="link"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i></a>
             </div>
-            <p class="phone col-sm-12 col-md-12 col-lg-3 d-flex justify-content-center"><i
-                    class="fa-solid fa-phone"></i>&nbsp;&nbsp;12-345-6789</p>
+            <p class="phone col-sm-12 col-md-12 col-lg-3 d-flex justify-content-center"><i class="fa-solid fa-phone" aria-hidden="true"></i>&nbsp;&nbsp;12-345-6789</p>
         </div>
     </footer>
     <script src="https://kit.fontawesome.com/090c602a0a.js" crossorigin="anonymous"></script>

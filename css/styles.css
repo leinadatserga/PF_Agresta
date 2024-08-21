@@ -243,6 +243,9 @@ footer .foot p, footer .foot h4 {
   font-family: best;
   margin: 0;
 }
+footer .foot .socials a {
+  color: white;
+}
 
 @media (min-width: 576px) {
   /* ---------- Header styles ---------- */
@@ -335,6 +338,9 @@ footer .foot p, footer .foot h4 {
   }
   /* ---------- Footer styles ---------- */
   footer .foot {
+    font-size: 1rem;
+  }
+  footer .foot p {
     font-size: 1rem;
   }
 }

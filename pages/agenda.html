@@ -17,21 +17,21 @@
 </head>
 
 <body class="agenda">
-  <header class="container-fluid">
+  <header class="container-fluid" role="banner">
     <div class="row d-flex justify-content-center align-items-center">
-      <img class="logo col-sm-12 col-md-2 col-lg-2 p-2 rounded animate__animated animate__flip animate__delay-2s" src="../assets/images/logo-principal.svg" alt="logo">
+      <img class="logo col-sm-12 col-md-2 col-lg-2 p-2 rounded animate__animated animate__flip animate__delay-2s" src="../assets/images/logo-principal.svg" alt="logo Sanatorio Pixies">
       <h2 class="title col-sm-12 col-md-10 col-lg-10 d-flex align-items-center justify-content-center">Sanatorio Pixies
       </h2>
     </div>
   </header>
-  <main class="agenda-main container">
+  <main class="agenda-main container" role="main">
     <div class="agenda-especialidades row d-flex justify-content-around align-items-center">
-      <a href="../index.html" class="link-light btn fs-4" role="button" title="Volver al inicio">Volver al Inicio</a>
+      <a href="../index.html" class="link-light btn fs-4" role="navigation" title="Volver al inicio">Volver al Inicio</a>
       <h1 class="form-title text-center my-4 fw-bolder text-light">Especialidades Médicas</h1>
       <div class="accordion" id="accordionExample">
 
         <!-- Cardiología -->
-        <div class="accordion-item">
+        <div class="accordion-item" role="region" aria-labelledby="headingCardiology" id="collapseCardiology">
           <h3 class="accordion-header">
             <button class="accordion-button" type="button" data-bs-toggle="collapse"
               data-bs-target="#collapseCardiology" aria-expanded="true" aria-controls="collapseCardiology">
@@ -59,7 +59,7 @@
         </div>
 
         <!-- Dermatología -->
-        <div class="accordion-item">
+        <div class="accordion-item" role="region" aria-labelledby="headingDermatology" id="collapseDermatology">
           <h3 class="accordion-header">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
               data-bs-target="#collapseDermatology" aria-expanded="false" aria-controls="collapseDermatology">
@@ -86,7 +86,7 @@
         </div>
 
         <!-- Endocrinología -->
-        <div class="accordion-item">
+        <div class="accordion-item" role="region" aria-labelledby="headingEndocrinology" id="collapseEndocrinology">
           <h3 class="accordion-header">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
               data-bs-target="#collapseEndocrinology" aria-expanded="false" aria-controls="collapseEndocrinology">
@@ -114,7 +114,7 @@
         </div>
 
         <!-- Gastroenterología -->
-        <div class="accordion-item">
+        <div class="accordion-item" role="region" aria-labelledby="headingGastroenterology" id="collapseGastroenterology">
           <h3 class="accordion-header">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
               data-bs-target="#collapseGastroenterology" aria-expanded="false" aria-controls="collapseGastroenterology">
@@ -141,7 +141,7 @@
         </div>
 
         <!-- Geriatría -->
-        <div class="accordion-item">
+        <div class="accordion-item" role="region" aria-labelledby="headingGeriatrics" id="collapseGeriatrics">
           <h3 class="accordion-header">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
               data-bs-target="#collapseGeriatrics" aria-expanded="false" aria-controls="collapseGeriatrics">
@@ -168,7 +168,7 @@
         </div>
 
         <!-- Hematología -->
-        <div class="accordion-item">
+        <div class="accordion-item" role="region" aria-labelledby="headingHematology" id="collapseHematology">
           <h3 class="accordion-header">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
               data-bs-target="#collapseHematology" aria-expanded="false" aria-controls="collapseHematology">
@@ -195,7 +195,7 @@
         </div>
 
         <!-- Infectología -->
-        <div class="accordion-item">
+        <div class="accordion-item" role="region" aria-labelledby="headingInfectology" id="collapseInfectology">
           <h3 class="accordion-header">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
               data-bs-target="#collapseInfectology" aria-expanded="false" aria-controls="collapseInfectology">
@@ -222,7 +222,7 @@
         </div>
 
         <!-- Medicina Interna -->
-        <div class="accordion-item">
+        <div class="accordion-item" role="region" aria-labelledby="headingInternalMedicine" id="collapseInternalMedicine">
           <h3 class="accordion-header">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
               data-bs-target="#collapseInternalMedicine" aria-expanded="false" aria-controls="collapseInternalMedicine">
@@ -249,7 +249,7 @@
         </div>
 
         <!-- Nefrología -->
-        <div class="accordion-item">
+        <div class="accordion-item" role="region" aria-labelledby="headingNephrology" id="collapseNephrology">
           <h3 class="accordion-header">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
               data-bs-target="#collapseNephrology" aria-expanded="false" aria-controls="collapseNephrology">
@@ -276,7 +276,7 @@
         </div>
 
         <!-- Neurología -->
-        <div class="accordion-item">
+        <div class="accordion-item" role="region" aria-labelledby="headingNeurology" id="collapseNeurology">
           <h3 class="accordion-header">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
               data-bs-target="#collapseNeurology" aria-expanded="false" aria-controls="collapseNeurology">
@@ -303,7 +303,7 @@
         </div>
 
         <!-- Obstetricia y Ginecología -->
-        <div class="accordion-item">
+        <div class="accordion-item" role="region" aria-labelledby="headingObstetricsGynecology" id="collapseObstetricsGynecology">
           <h3 class="accordion-header">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
               data-bs-target="#collapseObstetricsGynecology" aria-expanded="false"
@@ -331,7 +331,7 @@
         </div>
 
         <!-- Oncología -->
-        <div class="accordion-item">
+        <div class="accordion-item" role="region" aria-labelledby="headingOncology" id="collapseOncology">
           <h3 class="accordion-header">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
               data-bs-target="#collapseOncology" aria-expanded="false" aria-controls="collapseOncology">
@@ -357,7 +357,7 @@
         </div>
 
         <!-- Oftalmología -->
-        <div class="accordion-item">
+        <div class="accordion-item" role="region" aria-labelledby="headingOphthalmology" id="collapseOphthalmology">
           <h3 class="accordion-header">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
               data-bs-target="#collapseOphthalmology" aria-expanded="false" aria-controls="collapseOphthalmology">
@@ -384,7 +384,7 @@
         </div>
 
         <!-- Ortopedia -->
-        <div class="accordion-item">
+        <div class="accordion-item" role="region" aria-labelledby="headingOrthopedics" id="collapseOrthopedics">
           <h3 class="accordion-header">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
               data-bs-target="#collapseOrthopedics" aria-expanded="false" aria-controls="collapseOrthopedics">
@@ -411,7 +411,7 @@
         </div>
 
         <!-- Pediatría -->
-        <div class="accordion-item">
+        <div class="accordion-item" role="region" aria-labelledby="headingPediatrics" id="collapsePediatrics">
           <h3 class="accordion-header">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
               data-bs-target="#collapsePediatrics" aria-expanded="false" aria-controls="collapsePediatrics">
@@ -438,7 +438,7 @@
         </div>
 
         <!-- Psiquiatría -->
-        <div class="accordion-item">
+        <div class="accordion-item" role="region" aria-labelledby="headingPsychiatry" id="collapsePsychiatry">
           <h3 class="accordion-header">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
               data-bs-target="#collapsePsychiatry" aria-expanded="false" aria-controls="collapsePsychiatry">
@@ -465,7 +465,7 @@
         </div>
 
         <!-- Reumatología -->
-        <div class="accordion-item">
+        <div class="accordion-item" role="region" aria-labelledby="headingRheumatology" id="collapseRheumatology">
           <h3 class="accordion-header">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
               data-bs-target="#collapseRheumatology" aria-expanded="false" aria-controls="collapseRheumatology">
@@ -492,7 +492,7 @@
         </div>
 
         <!-- Traumatología -->
-        <div class="accordion-item">
+        <div class="accordion-item" role="region" aria-labelledby="headingTraumatology" id="collapseTraumatology">
           <h3 class="accordion-header">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
               data-bs-target="#collapseTraumatology" aria-expanded="false" aria-controls="collapseTraumatology">
@@ -519,7 +519,7 @@
         </div>
 
         <!-- Urología -->
-        <div class="accordion-item">
+        <div class="accordion-item" role="region" aria-labelledby="headingUrology" id="collapseUrology">
           <h3 class="accordion-header">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
               data-bs-target="#collapseUrology" aria-expanded="false" aria-controls="collapseUrology">
@@ -548,20 +548,19 @@
       </div>
     </div>
   </main>
-  <footer class="container-fluid ">
+  <footer class="container-fluid" role="contentinfo">
     <div class="foot row h-100 d-flex justify-content-between align-items-center">
-      <h4 class="col-sm-12 col-md-12 col-lg-3 text-center">© 2024 La Rosa, Mallo, Lanza, Agresta</h4>
-      <div class="socials col-sm-12 col-md-12 col-lg-6 d-flex justify-content-around align-middle">
-        <i class="fa-brands fa-whatsapp"></i>
-        <i class="fa-brands fa-instagram"></i>
-        <i class="fa-solid fa-envelope"></i>
-        <i class="fa-brands fa-linkedin"></i>
-        <i class="fa-brands fa-x-twitter"></i>
-      </div>
-      <p class="phone col-sm-12 col-md-12 col-lg-3 d-flex justify-content-center"><i
-          class="fa-solid fa-phone"></i>&nbsp;&nbsp;12-345-6789</p>
+        <h4 class="col-sm-12 col-md-12 col-lg-3 text-center">© 2024 La Rosa, Mallo, Lanza, Agresta</h4>
+        <div class="socials col-sm-12 col-md-12 col-lg-6 d-flex justify-content-around align-middle">
+            <a href="https://wa.me/1234567890" aria-label="WhatsApp" role="link"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></a>
+            <a href="https://instagram.com/yourprofile" aria-label="Instagram" role="link"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+            <a href="mailto:contacto@sanatoriopixies.com" aria-label="Correo electrónico" role="link"><i class="fa-solid fa-envelope" aria-hidden="true"></i></a>
+            <a href="https://linkedin.com/in/yourprofile" aria-label="LinkedIn" role="link"><i class="fa-brands fa-linkedin" aria-hidden="true"></i></a>
+            <a href="https://twitter.com/yourprofile" aria-label="Twitter" role="link"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i></a>
+        </div>
+        <p class="phone col-sm-12 col-md-12 col-lg-3 d-flex justify-content-center"><i class="fa-solid fa-phone" aria-hidden="true"></i>&nbsp;&nbsp;12-345-6789</p>
     </div>
-  </footer>
+</footer>
   <script src="https://kit.fontawesome.com/090c602a0a.js" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
