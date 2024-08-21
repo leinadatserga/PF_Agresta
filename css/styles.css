@@ -95,7 +95,13 @@ main .row .imagen {
   max-height: 60%;
 }
 main .row .imagen img {
+  opacity: 90%;
+  transition: border-radius 1s;
   border-radius: 70px 5px;
+}
+main .row .imagen img:hover {
+  border-radius: 5px 5px;
+  opacity: 100%;
 }
 main .row .banner1, main .row .banner2 {
   height: 20%;

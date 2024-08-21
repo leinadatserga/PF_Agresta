@@ -109,7 +109,13 @@ main {
         .imagen {
             max-height: 60%;
             img {
+                opacity: 90%;
+                transition: border-radius 1s;
                 border-radius: 70px 5px;
+            }
+            img:hover {
+                border-radius: 5px 5px;
+                opacity: 100%;
             }
         }
         .banner1, .banner2 {
@@ -289,6 +295,7 @@ footer {
 @media (min-width: 768px) {
 
 /* ---------- Header styles ---------- */
+
     header {
         div {
             .logo {
