@@ -1,44 +1,77 @@
-Lista de commits realizados para esta pre-entrega, del último al primero:
+Sanatorio Pixies
+Bienvenido al repositorio del sitio web de Sanatorio Pixies. Este proyecto tiene como objetivo proporcionar una plataforma en línea para acceder a información sobre servicios médicos, incluyendo clínicas, afiliación y agenda médica.
 
-commit 7af08d9b67a146b02ed701f873ed385d30e5b320 (HEAD -> main, origin/main)
-Author: Daniel Agresta <leinadatserga@gmail.com>
-Date:   Wed Aug 14 15:20:01 2024 -0300
+Descripción
+Sanatorio Pixies es una plataforma diseñada para ofrecer atención médica de calidad con disponibilidad 24/7. El sitio web permite a los usuarios obtener información sobre nuestras clínicas, realizar afiliaciones y gestionar citas, todo con el objetivo de brindar tranquilidad y bienestar a nuestros usuarios.
 
-    Ajuste de enlaces y Agenda
+Estructura del Proyecto
+El proyecto está estructurado en varios archivos y carpetas que permiten su correcto funcionamiento y mantenimiento. A continuación, se detalla la estructura del proyecto:
 
-commit 0024d37e09c699dbff06bc3bf1282a8587f8a1a2
-Author: Daniel Agresta <leinadatserga@gmail.com>
-Date:   Wed Aug 14 14:03:55 2024 -0300
+/sanatorio-pixies
+│
+├── assets/
+│   ├── icons/
+│   └── images/
+│
+├── css/
+│   └── styles.css
+│
+├── pages/
+│   ├── afiliacion.html
+│   ├── agenda.html
+│   ├── clinicas.html
+│   └── nosotros.html
+│
+├── index.html
+├── .gitignore
+└── README.md
+index.html: Página principal del sitio web.
+assets/: Carpeta que contiene los íconos e imágenes utilizados en el sitio.
+css/styles.css: Hoja de estilos personalizada para el diseño del sitio.
+pages/: Carpeta con las páginas internas del sitio, incluyendo "Nosotros", "Clínicas", "Afiliación" y "Agenda".
+.gitignore: Archivo para especificar qué archivos y carpetas deben ser ignorados por Git.
+Tecnologías Utilizadas
+HTML5: Estructura y contenido de la página.
+CSS: Estilos para el diseño visual.
+Bootstrap 5: Framework CSS para un diseño responsivo.
+Animate.css: Biblioteca para animaciones CSS.
+Font Awesome: Iconos para redes sociales y otras acciones.
+JavaScript: Scripts para mejorar la interacción y funcionalidad del sitio.
+Bootstrap Bundle: Incluye JavaScript para funcionalidades adicionales de Bootstrap.
+Instalación y Configuración
+Para trabajar con el proyecto localmente, sigue estos pasos:
 
-    Optimización de formulario
+Clona el repositorio:
 
-commit ab9c4dbaf8dbbe1dab4b471ff5d1f44962253ad3
-Author: Daniel Agresta <leinadatserga@gmail.com>
-Date:   Tue Aug 13 18:46:33 2024 -0300
+git clone https://github.com/tu_usuario/sanatorio-pixies.git
+Accede al directorio del proyecto:
 
-    Agregado de páginas y optimización de CSS + Assets
+cd sanatorio-pixies
+Abre el archivo index.html en tu navegador:
 
-commit 01a46c56f49adf4962899fa1f55f652f4281f690
-Author: Daniel Agresta <leinadatserga@gmail.com>
-Date:   Tue Aug 13 12:44:18 2024 -0300
+Puedes abrir el archivo index.html directamente desde tu navegador para ver el sitio web en funcionamiento.
 
-    Aplicación de Bootstrap y CSS a Index
+Uso
+Página Principal (index.html): Muestra la página de inicio con enlaces a otras secciones.
+Páginas Internas:
+Nosotros: Información sobre la historia fundacional.
+Clínicas: Detalles sobre las clínicas disponibles.
+Afiliación: Formulario para afiliarse al sanatorio.
+Agenda: Listado de especialidades médicas con sus respectivos profesionales y la posibilidad de agendar citas.
+Contribuciones
+Las contribuciones son bienvenidas. Si deseas contribuir al proyecto, por favor sigue estos pasos:
 
-commit dd369e08f5d28158e2e62eaabcd90330c0ba7cc9
-Author: Daniel Agresta <leinadatserga@gmail.com>
-Date:   Wed Aug 7 18:17:14 2024 -0300
+Haz un Fork del repositorio.
+Crea una rama para tu característica (git checkout -b feature/nueva-caracteristica).
+Realiza los cambios y haz commit (git commit -am 'Añadir nueva característica').
+Haz push a la rama (git push origin feature/nueva-caracteristica).
+Crea un Pull Request.
+Contacto
+Para cualquier consulta, no dudes en ponerte en contacto con nosotros a través de los siguientes canales:
 
-    Inyección de assets y formulario
-
-commit 8cd58825b52c7046498adff8417592788ba27f72
-Author: Daniel Agresta <leinadatserga@gmail.com>
-Date:   Wed Aug 7 16:26:08 2024 -0300
-
-    Implementación de etiquetas semánticas
-
-commit b7eb369ec0b64f0f5aae01c9c14e080d36d40c32
-Author: Daniel Agresta <leinadatserga@gmail.com>
-Date:   Wed Aug 7 15:45:22 2024 -0300
-
-    Armado básico de estructura
-(END)
+WhatsApp: +59899603297
+Instagram: @leinadatserga
+Correo Electrónico: contacto@sanatoriopixies.com
+LinkedIn: Daniel Agresta
+Licencia
+Este proyecto está licenciado bajo la Licencia MIT. Consulta el archivo LICENSE para más detalles.
