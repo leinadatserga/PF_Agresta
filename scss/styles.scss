@@ -3,6 +3,8 @@ $color2: #008585;
 $color3: rgb(196, 223, 247);
 $color4: rgb(204, 231, 150);
 $color5: white;
+$color6: rgb(216, 231, 150);
+$color7: rgb(17, 17, 17);
 $fuente1: title;
 $fuente2: best;
 $fondo1: rgba(0, 0, 22, 0.89);
@@ -12,6 +14,7 @@ $fondo4: rgba(22, 9, 0, 0.89);
 $fondo5: rgba(255, 228, 196, 0.658);
 $fondo6: rgba(255, 255, 255, 0.137);
 $fondo7: rgba(19, 2, 51, 0.548);
+$fondo8: rgba(22, 20, 0, 0.89);
 
 @font-face {
 	font-family: best;
@@ -54,8 +57,8 @@ body {
 	background-size: cover;
 }
 .agenda {
-	background-image: url(../assets/images/ciudad.webp);
-	background-color: $fondo4;
+	background-image: url(../assets/images/agenda.webp);
+	background-color: $fondo8;
 	background-blend-mode: overlay;
 	background-size: cover;
 }
@@ -109,7 +112,7 @@ main {
                 border-radius: 70px 5px;
             }
         }
-        .banner1 {
+        .banner1, .banner2 {
             height: 20%;
             a {
                 background-color: $fondo6;
@@ -117,22 +120,15 @@ main {
                 font-weight: bolder;
                 font-size: 1.8rem;
                 border-radius: 50px 5px;
+                transition: background-color 1s;
             }
             .boton:hover {
-                color: black !important;
-                animation-name: boton;
-                animation-duration: 2s;
-                box-shadow: 0 0 0 2em transparent;
-            }
-        }
-        .banner2 {
-            height: 20%;
-            a {
-                background-color: $fondo6;
-                color: $color4;
-                font-weight: bolder;
-                font-size: 1.8rem;
-                border-radius: 50px 5px;
+                color: $color6;
+                background-color: $fondo7;
+                transform: rotateX(30deg);
+                transform: scaleY(1);
+                font-family: best;
+                text-shadow: 4px 4px 4px $color7;
             }
         }
 	}
@@ -263,6 +259,9 @@ footer {
             a {
                 color: $color5;
             }
+            a:hover {
+                transform: scale(1.6);
+            }
         }
     }
 }
@@ -286,6 +285,7 @@ footer {
 		}
 	}
 }
+
 @media (min-width: 768px) {
 
 /* ---------- Header styles ---------- */
@@ -385,6 +385,7 @@ footer {
         }
     }
 }
+
 @media (min-width: 1024px) {
 
 /* ---------- Header styles ---------- */
@@ -432,6 +433,7 @@ footer {
 		}
 	}
 }
+
 @media (min-width: 1200px) {
 
 /* ---------- Header styles ---------- */
@@ -504,6 +506,3 @@ footer {
         }
 	}
 }
-@keyframes boton {
-    0% { box-shadow: 0 0 0 0 var(--hover); }
-    }

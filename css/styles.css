@@ -41,8 +41,8 @@ body ::-webkit-scrollbar {
 }
 
 .agenda {
-  background-image: url(../assets/images/ciudad.webp);
-  background-color: rgba(22, 9, 0, 0.89);
+  background-image: url(../assets/images/agenda.webp);
+  background-color: rgba(22, 20, 0, 0.89);
   background-blend-mode: overlay;
   background-size: cover;
 }
@@ -97,31 +97,24 @@ main .row .imagen {
 main .row .imagen img {
   border-radius: 70px 5px;
 }
-main .row .banner1 {
+main .row .banner1, main .row .banner2 {
   height: 20%;
 }
-main .row .banner1 a {
+main .row .banner1 a, main .row .banner2 a {
   background-color: rgba(255, 255, 255, 0.137);
   color: rgb(204, 231, 150);
   font-weight: bolder;
   font-size: 1.8rem;
   border-radius: 50px 5px;
+  transition: background-color 1s;
 }
-main .row .banner1 .boton:hover {
-  color: black !important;
-  animation-name: boton;
-  animation-duration: 2s;
-  box-shadow: 0 0 0 2em transparent;
-}
-main .row .banner2 {
-  height: 20%;
-}
-main .row .banner2 a {
-  background-color: rgba(255, 255, 255, 0.137);
-  color: rgb(204, 231, 150);
-  font-weight: bolder;
-  font-size: 1.8rem;
-  border-radius: 50px 5px;
+main .row .banner1 .boton:hover, main .row .banner2 .boton:hover {
+  color: rgb(216, 231, 150);
+  background-color: rgba(19, 2, 51, 0.548);
+  transform: rotateX(30deg);
+  transform: scaleY(1);
+  font-family: best;
+  text-shadow: 4px 4px 4px rgb(17, 17, 17);
 }
 
 .sobre-nosotros {
@@ -245,6 +238,9 @@ footer .foot p, footer .foot h4 {
 }
 footer .foot .socials a {
   color: white;
+}
+footer .foot .socials a:hover {
+  transform: scale(1.6);
 }
 
 @media (min-width: 576px) {
@@ -429,11 +425,6 @@ footer .foot .socials a {
   footer .foot p {
     font-family: best;
     margin: 0;
-  }
-}
-@keyframes boton {
-  0% {
-    box-shadow: 0 0 0 0 var(--hover);
   }
 }
 
