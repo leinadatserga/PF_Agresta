@@ -17,7 +17,7 @@ body {
   height: 100vh;
   margin: 0;
   padding: 0;
-  background-image: url(../assets/images/corridor-central-perspective-980x560.webp);
+  background-image: url("../assets/images/corridor-central-perspective-980x560.webp");
   background-color: rgba(0, 0, 22, 0.89);
   background-blend-mode: overlay;
   background-size: cover;
@@ -27,28 +27,28 @@ body ::-webkit-scrollbar {
 }
 
 .afiliacion {
-  background-image: url(../assets/images/ventanal.webp);
+  background-image: url("../assets/images/ventanal.webp");
   background-color: rgba(0, 22, 21, 0.89);
   background-blend-mode: overlay;
   background-size: cover;
 }
 
 .nosotros {
-  background-image: url(../assets/images/ventanal2.webp);
+  background-image: url("../assets/images/ventanal2.webp");
   background-color: rgba(22, 0, 15, 0.89);
   background-blend-mode: overlay;
   background-size: cover;
 }
 
 .agenda {
-  background-image: url(../assets/images/agenda.webp);
+  background-image: url("../assets/images/agenda.webp");
   background-color: rgba(22, 20, 0, 0.89);
   background-blend-mode: overlay;
   background-size: cover;
 }
 
 .clinicas {
-  background-image: url(../assets/images/ciudad.webp);
+  background-image: url("../assets/images/ciudad.webp");
   background-color: rgba(22, 9, 0, 0.89);
   background-blend-mode: overlay;
   background-size: cover;
@@ -58,7 +58,9 @@ body ::-webkit-scrollbar {
 header {
   height: 20%;
   width: 100%;
-  background-image: url(../assets/images/fondo-cabecera.webp);
+  background-image: url("../assets/images/fondo-cabecera.webp");
+  background-color: none;
+  background-blend-mode: overlay;
   background-size: cover;
 }
 header div {
@@ -72,8 +74,6 @@ header div .logo {
 }
 header div .title {
   height: 58%;
-  border: 0;
-  margin: 0;
   font-family: title;
   color: rgb(56, 164, 236);
   font-size: 3rem;
@@ -95,18 +95,18 @@ main .row .imagen {
   max-height: 60%;
 }
 main .row .imagen img {
-  opacity: 90%;
+  opacity: 0.9;
   transition: border-radius 1s;
   border-radius: 70px 5px;
 }
 main .row .imagen img:hover {
-  border-radius: 5px 5px;
-  opacity: 100%;
+  border-radius: 5px;
+  opacity: 1;
 }
 main .row .banner1, main .row .banner2 {
   height: 20%;
 }
-main .row .banner1 a, main .row .banner2 a {
+main .row .banner1 .boton, main .row .banner2 .boton {
   background-color: rgba(255, 255, 255, 0.137);
   color: rgb(204, 231, 150);
   font-weight: bolder;
@@ -117,8 +117,7 @@ main .row .banner1 a, main .row .banner2 a {
 main .row .banner1 .boton:hover, main .row .banner2 .boton:hover {
   color: rgb(216, 231, 150);
   background-color: rgba(19, 2, 51, 0.548);
-  transform: rotateX(30deg);
-  transform: scaleY(1);
+  transform: rotateX(30deg), scaleY(1);
   font-family: best;
   text-shadow: 4px 4px 4px rgb(17, 17, 17);
 }
@@ -150,10 +149,14 @@ main .row .banner1 .boton:hover, main .row .banner2 .boton:hover {
   overflow-x: auto;
 }
 .formulario .form-afiliat {
+  font-family: best;
   background-color: rgba(255, 255, 255, 0.137);
   padding: 60px;
   border-radius: 70px 5px;
   color: white;
+}
+.formulario .form-afiliat .enviar, .formulario .form-afiliat .volver {
+  background-color: #008585;
 }
 
 .agenda-main .agenda-especialidades {
@@ -162,6 +165,12 @@ main .row .banner1 .boton:hover, main .row .banner2 .boton:hover {
 .agenda-main .agenda-especialidades .accordion .accordion-item {
   background-color: rgba(0, 133, 133, 0.5411764706);
   color: white;
+  font-family: best;
+}
+.agenda-main .agenda-especialidades .accordion .accordion-item .accordion-header .accordion-button {
+  background-color: rgba(255, 255, 255, 0.137);
+  color: white;
+  font-size: 21px;
 }
 
 .locales {
@@ -352,10 +361,10 @@ footer .foot .socials a:hover {
     font-size: 5rem;
   }
   /* ---------- Main styles ---------- */
-  main .row .banner1 a {
+  main .row .banner1 .boton {
     font-size: 2rem;
   }
-  main .row .banner2 a {
+  main .row .banner2 .boton {
     font-size: 2rem;
   }
   .locales .carta-clinicas {
@@ -403,14 +412,14 @@ footer .foot .socials a:hover {
     width: 100%;
     border-radius: 70px 5px;
   }
-  main .row .banner1 a {
+  main .row .banner1 .boton {
     background-color: rgba(255, 255, 255, 0.137);
     color: rgb(204, 231, 150);
     font-weight: bolder;
     font-size: 2.5rem;
     border-radius: 50px 5px;
   }
-  main .row .banner2 a {
+  main .row .banner2 .boton {
     background-color: rgba(255, 255, 255, 0.137);
     color: rgb(204, 231, 150);
     font-weight: bolder;

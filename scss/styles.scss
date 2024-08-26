@@ -15,6 +15,18 @@ $fondo5: rgba(255, 228, 196, 0.658);
 $fondo6: rgba(255, 255, 255, 0.137);
 $fondo7: rgba(19, 2, 51, 0.548);
 $fondo8: rgba(22, 20, 0, 0.89);
+@mixin fondo($imagen, $color) {
+    background-image: url($imagen);
+    background-color: $color;
+    background-blend-mode: overlay;
+    background-size: cover;
+}  
+@mixin redondeado($radio) {
+    border-radius: $radio;
+}  
+@mixin transicion($propiedad, $duracion) {
+    transition: $propiedad $duracion;
+}
 
 @font-face {
 	font-family: best;
@@ -36,37 +48,22 @@ body {
 	height: 100vh;
 	margin: 0;
 	padding: 0;
-	background-image: url(../assets/images/corridor-central-perspective-980x560.webp);
-	background-color: $fondo1;
-	background-blend-mode: overlay;
-	background-size: cover;
+	@include fondo("../assets/images/corridor-central-perspective-980x560.webp", $fondo1);
     ::-webkit-scrollbar {
         display: none;
     }
 }
 .afiliacion {
-	background-image: url(../assets/images/ventanal.webp);
-	background-color: $fondo2;
-	background-blend-mode: overlay;
-	background-size: cover;
+    @include fondo("../assets/images/ventanal.webp", $fondo2);
 }
 .nosotros {
-	background-image: url(../assets/images/ventanal2.webp);
-	background-color: $fondo3;
-	background-blend-mode: overlay;
-	background-size: cover;
+    @include fondo("../assets/images/ventanal2.webp", $fondo3);
 }
 .agenda {
-	background-image: url(../assets/images/agenda.webp);
-	background-color: $fondo8;
-	background-blend-mode: overlay;
-	background-size: cover;
+    @include fondo("../assets/images/agenda.webp", $fondo8);
 }
 .clinicas {
-	background-image: url(../assets/images/ciudad.webp);
-	background-color: $fondo4;
-	background-blend-mode: overlay;
-	background-size: cover;
+    @include fondo("../assets/images/ciudad.webp", $fondo4);
 }
 
 /* ---------- Header styles ---------- */
@@ -74,20 +71,17 @@ body {
 header {
 	height: 20%;
 	width: 100%;
-	background-image: url(../assets/images/fondo-cabecera.webp);
-	background-size: cover;
+    @include fondo("../assets/images/fondo-cabecera.webp", none);
 	div {
 		height: 100%;
         .logo {
             height: 42%;
             width: 100%;
-            border-radius: 50px 5px;
+            @include redondeado(50px 5px);
             background-color: $fondo5;
         }
         .title {
             height: 58%;
-            border: 0;
-            margin: 0;
             font-family: $fuente1;
             color: $color1;
             font-size: 3rem;
@@ -109,32 +103,31 @@ main {
         .imagen {
             max-height: 60%;
             img {
-                opacity: 90%;
-                transition: border-radius 1s;
-                border-radius: 70px 5px;
-            }
-            img:hover {
-                border-radius: 5px 5px;
-                opacity: 100%;
+                opacity: 0.9;
+                @include transicion(border-radius, 1s);
+                @include redondeado(70px 5px);
+                &:hover {
+                    @include redondeado(5px);
+                opacity: 1;
+                }
             }
         }
         .banner1, .banner2 {
             height: 20%;
-            a {
+            .boton {
                 background-color: $fondo6;
                 color: $color4;
                 font-weight: bolder;
                 font-size: 1.8rem;
-                border-radius: 50px 5px;
-                transition: background-color 1s;
-            }
-            .boton:hover {
+                @include redondeado(50px 5px);
+                @include transicion(background-color, 1s);
+                &:hover {
                 color: $color6;
                 background-color: $fondo7;
-                transform: rotateX(30deg);
-                transform: scaleY(1);
+                transform: rotateX(30deg), scaleY(1);
                 font-family: best;
                 text-shadow: 4px 4px 4px $color7;
+                }
             }
         }
 	}
@@ -164,20 +157,31 @@ main {
 	width: 100%;
 	overflow-x: auto;
     .form-afiliat {
+        font-family: best;
         background-color: $fondo6;
         padding: 60px;
         border-radius: 70px 5px;
         color: $color5;
+        .enviar, .volver {
+            background-color: $color2;
+        }
     }
 }
 .agenda-main {
     .agenda-especialidades {
         overflow-x: auto;
-        
         .accordion {
             .accordion-item {
                 background-color: #0085858a;
                 color: $color5;
+                font-family: best;
+                .accordion-header {
+                    .accordion-button {
+                        background-color: $fondo6;
+                        color: $color5;
+                        font-size: 21px;
+                    }
+                }
             }
         }
     }
@@ -264,9 +268,9 @@ footer {
         .socials {
             a {
                 color: $color5;
-            }
-            a:hover {
+                &:hover {
                 transform: scale(1.6);
+                }
             }
         }
     }
@@ -410,12 +414,12 @@ footer {
     main {
         .row {
             .banner1 {
-                a {
+                .boton {
                     font-size: 2rem;
                 }
             }
             .banner2 {
-                a {
+                .boton {
                     font-size: 2rem;
                 }
             }
@@ -476,7 +480,7 @@ footer {
                 }
             }
             .banner1 {
-                a {
+                .boton {
                     background-color: $fondo6;
                     color: $color4;
                     font-weight: bolder;
@@ -485,7 +489,7 @@ footer {
                 }
             }
             .banner2 {
-                a {
+                .boton {
                     background-color: $fondo6;
                     color: $color4;
                     font-weight: bolder;
