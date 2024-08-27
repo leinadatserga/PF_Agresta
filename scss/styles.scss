@@ -15,6 +15,7 @@ $fondo5: rgba(255, 228, 196, 0.658);
 $fondo6: rgba(255, 255, 255, 0.137);
 $fondo7: rgba(19, 2, 51, 0.548);
 $fondo8: rgba(22, 20, 0, 0.89);
+$fondo9: rgb(24, 24, 24);
 @mixin fondo($imagen, $color) {
     background-image: url($imagen);
     background-color: $color;
@@ -64,6 +65,10 @@ body {
 }
 .clinicas {
     @include fondo("../assets/images/ciudad.webp", $fondo4);
+}
+.error {
+    @include fondo("../assets/images/corridor-central-perspective-980x560.webp", $fondo9);
+
 }
 
 /* ---------- Header styles ---------- */
@@ -250,6 +255,41 @@ main {
         }
     }
 }
+.error {
+    height: 100%;
+    .no-encontrado {
+        height: 80%;
+        margin: 3.5vh 0;
+        font-family: title;
+        text-align: center;
+        h1 {
+            color: red;
+            margin-bottom: 40px;
+        }
+        h2 {
+            color: $color4;
+            margin-bottom: 20px;
+        }
+        p {
+            color: $color3;
+            a {
+                font-family: best;
+                font-size: 1.2rem;
+                text-decoration: none;
+                color: $color6;
+            }
+        }
+        .volver-inicio {
+            padding-top: 5%;
+            padding-bottom: 30vh;
+            margin: 50px 5vw;
+            background-image: url(../assets/images/doctora_404.jpg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: top center;
+        }
+    }
+}
 
 /* ---------- Footer styles ---------- */
 
@@ -294,6 +334,24 @@ footer {
             }
 		}
 	}
+
+/* ---------- Main styles ---------- */
+
+    .error {
+        .no-encontrado {
+            p {
+                font-size: 1.5rem;
+                a {
+                    font-size: 2rem;
+                }
+            }
+            .volver-inicio {
+                padding-top: 2%;
+                padding-bottom: 35vh;
+                margin: 50px 5vw;
+            }
+        }
+    }
 }
 
 @media (min-width: 768px) {

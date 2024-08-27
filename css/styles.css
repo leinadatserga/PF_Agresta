@@ -54,6 +54,13 @@ body ::-webkit-scrollbar {
   background-size: cover;
 }
 
+.error {
+  background-image: url("../assets/images/corridor-central-perspective-980x560.webp");
+  background-color: rgb(24, 24, 24);
+  background-blend-mode: overlay;
+  background-size: cover;
+}
+
 /* ---------- Header styles ---------- */
 header {
   height: 20%;
@@ -236,6 +243,42 @@ main .row .banner1 .boton:hover, main .row .banner2 .boton:hover {
   width: 75%;
 }
 
+.error {
+  height: 100%;
+}
+.error .no-encontrado {
+  height: 80%;
+  margin: 3.5vh 0;
+  font-family: title;
+  text-align: center;
+}
+.error .no-encontrado h1 {
+  color: red;
+  margin-bottom: 40px;
+}
+.error .no-encontrado h2 {
+  color: rgb(204, 231, 150);
+  margin-bottom: 20px;
+}
+.error .no-encontrado p {
+  color: rgb(196, 223, 247);
+}
+.error .no-encontrado p a {
+  font-family: best;
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: rgb(216, 231, 150);
+}
+.error .no-encontrado .volver-inicio {
+  padding-top: 5%;
+  padding-bottom: 30vh;
+  margin: 50px 5vw;
+  background-image: url(../assets/images/doctora_404.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
 /* ---------- Footer styles ---------- */
 footer {
   height: 18%;
@@ -271,6 +314,18 @@ footer .foot .socials a:hover {
   header div .title {
     height: 50%;
     font-size: 4rem;
+  }
+  /* ---------- Main styles ---------- */
+  .error .no-encontrado p {
+    font-size: 1.5rem;
+  }
+  .error .no-encontrado p a {
+    font-size: 2rem;
+  }
+  .error .no-encontrado .volver-inicio {
+    padding-top: 2%;
+    padding-bottom: 35vh;
+    margin: 50px 5vw;
   }
 }
 @media (min-width: 768px) {
