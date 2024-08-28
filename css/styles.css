@@ -240,7 +240,7 @@ main .row .banner1 .boton:hover, main .row .banner2 .boton:hover {
 .locales .carta-clinicas .img-clinica img {
   height: 80%;
   width: 75%;
-  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s;
 }
 .locales .carta-clinicas .img-clinica img:hover {
   transform: scale(1.3);
