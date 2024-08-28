@@ -259,6 +259,10 @@ main {
             grid-area: mapa;
             border-radius: 0 10px 50px 0;
             background-color: $fondo6;
+            iframe {
+                width: 70%;
+                height: 70%;
+            }
             img {
                 height: 70%;
                 width: 75%;
