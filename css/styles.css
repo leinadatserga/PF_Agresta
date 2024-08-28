@@ -169,6 +169,11 @@ main .row .banner1 .boton:hover, main .row .banner2 .boton:hover {
 .agenda-main .agenda-especialidades {
   overflow-x: auto;
 }
+.agenda-main .agenda-especialidades a {
+  width: auto;
+  margin-top: 10px;
+  background-color: rgba(0, 133, 133, 0.5411764706);
+}
 .agenda-main .agenda-especialidades .accordion .accordion-item {
   background-color: rgba(0, 133, 133, 0.5411764706);
   color: white;
@@ -178,6 +183,11 @@ main .row .banner1 .boton:hover, main .row .banner2 .boton:hover {
   background-color: rgba(255, 255, 255, 0.137);
   color: white;
   font-size: 21px;
+}
+.agenda-main .agenda-especialidades .accordion .modal-content {
+  background-color: rgba(0, 133, 133, 0.5411764706);
+  font-family: best;
+  border-radius: 50px 5px;
 }
 
 .locales {
@@ -326,6 +336,10 @@ footer .foot .socials a:hover {
     padding-top: 2%;
     padding-bottom: 35vh;
     margin: 50px 5vw;
+  }
+  .clinicas .locales .carta-clinicas .mapa-clinica iframe {
+    height: 65%;
+    width: 74%;
   }
 }
 @media (min-width: 768px) {

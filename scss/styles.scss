@@ -16,6 +16,7 @@ $fondo6: rgba(255, 255, 255, 0.137);
 $fondo7: rgba(19, 2, 51, 0.548);
 $fondo8: rgba(22, 20, 0, 0.89);
 $fondo9: rgb(24, 24, 24);
+$fondo10: #0085858a;
 @mixin fondo($imagen, $color) {
     background-image: url($imagen);
     background-color: $color;
@@ -165,7 +166,7 @@ main {
         font-family: best;
         background-color: $fondo6;
         padding: 60px;
-        border-radius: 70px 5px;
+        @include redondeado(70px 5px);
         color: $color5;
         .enviar, .volver {
             background-color: $color2;
@@ -175,9 +176,14 @@ main {
 .agenda-main {
     .agenda-especialidades {
         overflow-x: auto;
+        a {
+            width: auto;
+            margin-top: 10px;
+            background-color: $fondo10;
+        }
         .accordion {
             .accordion-item {
-                background-color: #0085858a;
+                background-color: $fondo10;
                 color: $color5;
                 font-family: best;
                 .accordion-header {
@@ -187,6 +193,11 @@ main {
                         font-size: 21px;
                     }
                 }
+            }
+            .modal-content {
+                background-color: $fondo10;
+                font-family: best;
+                @include redondeado(50px 5px);
             }
         }
     }
@@ -349,6 +360,18 @@ footer {
                 padding-top: 2%;
                 padding-bottom: 35vh;
                 margin: 50px 5vw;
+            }
+        }
+    }
+    .clinicas {
+        .locales {
+            .carta-clinicas {
+                .mapa-clinica {
+                    iframe {
+                        height: 65%;
+                        width: 74%;
+                    }
+                }
             }
         }
     }
